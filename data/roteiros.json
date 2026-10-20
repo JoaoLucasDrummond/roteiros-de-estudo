@@ -1,0 +1,218 @@
+
+[
+  {
+    "id": 1,
+    "titulo": "Frações",
+    "disciplinaId": 1,
+    "anoEscolar": 6,
+    "tema": "Operações com frações",
+    "descricao": "Aprenda o conceito de frações, seus elementos e operações básicas.",
+    "tempoEstimado": 30,
+    "professorRevisor": {
+      "nome": "Ana Souza",
+      "disciplina": "Matemática",
+      "escola": "Escola Municipal Exemplo"
+    },
+    "conteudo": [
+      "Conceito de frações",
+      "Numerador e denominador",
+      "Frações equivalentes",
+      "Comparação de frações",
+      "Operações básicas"
+    ],
+    "questoes": [
+      {
+        "pergunta": "Quanto é 1/2 + 1/4?",
+        "resposta": "3/4"
+      },
+      {
+        "pergunta": "Qual fração é maior: 2/3 ou 1/3?",
+        "resposta": "2/3"
+      },
+      {
+        "pergunta": "Simplifique a fração 6/8.",
+        "resposta": "3/4"
+      }
+    ],
+    "termoWikipedia": "Fração"
+  },
+  {
+    "id": 2,
+    "titulo": "Sistema Solar",
+    "disciplinaId": 2,
+    "anoEscolar": 7,
+    "tema": "Astronomia",
+    "descricao": "Conheça os planetas e as principais características do Sistema Solar.",
+    "tempoEstimado": 25,
+    "professorRevisor": {
+      "nome": "Carlos Mendes",
+      "disciplina": "Ciências",
+      "escola": "Escola Municipal Exemplo"
+    },
+    "conteudo": [
+      "O Sol e sua importância",
+      "Planetas do Sistema Solar",
+      "Movimentos dos planetas",
+      "Satélites naturais"
+    ],
+    "questoes": [
+      {
+        "pergunta": "Qual é o planeta mais próximo do Sol?",
+        "resposta": "Mercúrio"
+      },
+      {
+        "pergunta": "Quantos planetas existem no Sistema Solar?",
+        "resposta": "Oito"
+      },
+      {
+        "pergunta": "Qual estrela está no centro do Sistema Solar?",
+        "resposta": "O Sol"
+      }
+    ],
+    "termoWikipedia": "Sistema Solar"
+  },
+  {
+    "id": 3,
+    "titulo": "Revolução Francesa",
+    "disciplinaId": 3,
+    "anoEscolar": 8,
+    "tema": "História Moderna",
+    "descricao": "Entenda os acontecimentos e as consequências da Revolução Francesa.",
+    "tempoEstimado": 35,
+    "professorRevisor": {
+      "nome": "Mariana Oliveira",
+      "disciplina": "História",
+      "escola": "Escola Estadual Exemplo"
+    },
+    "conteudo": [
+      "Contexto histórico",
+      "Sociedade francesa",
+      "Queda da Bastilha",
+      "Declaração dos Direitos do Homem",
+      "Consequências da revolução"
+    ],
+    "questoes": [
+      {
+        "pergunta": "Em que ano começou a Revolução Francesa?",
+        "resposta": "1789"
+      },
+      {
+        "pergunta": "Qual evento simbolizou o início da revolução?",
+        "resposta": "A Queda da Bastilha"
+      },
+      {
+        "pergunta": "Quais eram os ideais associados à revolução?",
+        "resposta": "Liberdade, igualdade e fraternidade"
+      }
+    ],
+    "termoWikipedia": "Revolução Francesa"
+  },
+  {
+    "id": 4,
+    "titulo": "Interpretação de Textos",
+    "disciplinaId": 4,
+    "anoEscolar": 6,
+    "tema": "Leitura e interpretação",
+    "descricao": "Desenvolva habilidades de leitura e compreensão textual.",
+    "tempoEstimado": 20,
+    "professorRevisor": {
+      "nome": "Fernanda Lima",
+      "disciplina": "Português",
+      "escola": "Escola Estadual Exemplo"
+    },
+    "conteudo": [
+      "Identificação do tema",
+      "Ideia principal",
+      "Informações explícitas",
+      "Informações implícitas"
+    ],
+    "questoes": [
+      {
+        "pergunta": "O que é a ideia principal de um texto?",
+        "resposta": "É a informação central que o texto procura transmitir."
+      },
+      {
+        "pergunta": "O que é uma informação explícita?",
+        "resposta": "Uma informação apresentada diretamente no texto."
+      },
+      {
+        "pergunta": "O que significa inferir uma informação?",
+        "resposta": "Concluir algo a partir das pistas presentes no texto."
+      }
+    ],
+    "termoWikipedia": "Interpretação de texto"
+  },
+  {
+    "id": 5,
+    "titulo": "Regiões do Brasil",
+    "disciplinaId": 5,
+    "anoEscolar": 7,
+    "tema": "Geografia do Brasil",
+    "descricao": "Conheça as cinco regiões brasileiras e suas características.",
+    "tempoEstimado": 30,
+    "professorRevisor": {
+      "nome": "Ricardo Alves",
+      "disciplina": "Geografia",
+      "escola": "Escola Municipal Exemplo"
+    },
+    "conteudo": [
+      "Divisão regional do Brasil",
+      "Região Norte",
+      "Região Nordeste",
+      "Região Centro-Oeste",
+      "Região Sudeste",
+      "Região Sul"
+    ],
+    "questoes": [
+      {
+        "pergunta": "Quantas regiões oficiais existem no Brasil?",
+        "resposta": "Cinco"
+      },
+      {
+        "pergunta": "Em qual região fica o Paraná?",
+        "resposta": "Região Sul"
+      },
+      {
+        "pergunta": "Qual é a maior região brasileira em extensão territorial?",
+        "resposta": "Região Norte"
+      }
+    ],
+    "termoWikipedia": "Regiões do Brasil"
+  },
+  {
+    "id": 6,
+    "titulo": "Equações do Primeiro Grau",
+    "disciplinaId": 1,
+    "anoEscolar": 9,
+    "tema": "Álgebra",
+    "descricao": "Aprenda a resolver equações do primeiro grau passo a passo.",
+    "tempoEstimado": 30,
+    "professorRevisor": {
+      "nome": "Ana Souza",
+      "disciplina": "Matemática",
+      "escola": "Escola Municipal Exemplo"
+    },
+    "conteudo": [
+      "Conceito de equação",
+      "Incógnitas",
+      "Princípio da igualdade",
+      "Resolução de equações",
+      "Problemas envolvendo equações"
+    ],
+    "questoes": [
+      {
+        "pergunta": "Resolva: x + 5 = 12.",
+        "resposta": "x = 7"
+      },
+      {
+        "pergunta": "Resolva: 2x = 18.",
+        "resposta": "x = 9"
+      },
+      {
+        "pergunta": "Resolva: 3x - 4 = 11.",
+        "resposta": "x = 5"
+      }
+    ],
+    "termoWikipedia": "Equação do primeiro grau"
+  }
+]

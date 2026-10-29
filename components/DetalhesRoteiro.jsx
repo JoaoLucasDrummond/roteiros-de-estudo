@@ -9,6 +9,14 @@ export default function DetalhesRoteiro({ roteiro, disciplina }) {
         <h1>{roteiro.titulo}</h1>
         <p>{roteiro.descricao}</p>
       </div>
+      <aside className="aviso-ia" role="note">
+        <p>
+          <strong>Material gerado por inteligência artificial.</strong>{" "}
+          Este roteiro foi criado com apoio de IA e revisado pelo professor{" "}
+          {roteiro.professorRevisor.nome} ({roteiro.professorRevisor.disciplina},{" "}
+          {roteiro.professorRevisor.escola}) antes de ser liberado.
+        </p>
+      </aside>
       <section className="detalhes-info">
         <p><strong>Tema:</strong> {roteiro.tema}</p>
         <p>

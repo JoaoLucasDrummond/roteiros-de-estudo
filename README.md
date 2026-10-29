@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Roteiros de Estudo
 
-## Getting Started
+Site do projeto **Roteiros de Estudo**, que apoia alunos do 6º ao 9º ano da rede municipal fora da sala de aula. O aluno escolhe a disciplina e o ano e encontra roteiros de estudo gerados por IA e revisados por professores. O professor pode simular o pedido de um novo roteiro.
 
-First, run the development server:
+Projeto da Atividade Avaliativa A2 (Desenvolvimento Web), feito em dupla:
+
+- João Lucas Damato Drummond (2320681)
+- João Pedro de Oliveira Mendes Sereno (2453231)
+
+## Funcionalidades
+
+- **Página inicial:** lista os roteiros e permite filtrar por disciplina e por ano escolar.
+- **Página do roteiro (`/roteiros/[id]`):** mostra título, tema, tempo estimado, conteúdo, questões de fixação com resposta, aviso de que o material foi gerado por IA e os dados do professor revisor (nome, disciplina e escola). Um id inexistente leva à página 404.
+- **Material complementar:** resumo do artigo da Wikipédia sobre o tema, com estados de carregamento, erro e sucesso. Se a API falhar, o roteiro continua sendo exibido normalmente.
+- **Solicitar roteiro (`/solicitar`):** formulário com validação (quantidade de questões de 3 a 10 e data com pelo menos 7 dias de antecedência). O envio é apenas simulado e nenhum dado é enviado a servidor.
+
+## Tecnologias
+
+- Next.js (App Router) e React, exportados como site estático
+- Dados do domínio em arquivos JSON (`data/disciplinas.json` e `data/roteiros.json`)
+- CSS puro (`app/globals.css`), sem bibliotecas de componentes
+- API externa: [API da Wikipédia em português](https://pt.wikipedia.org/w/api.php), pública e sem chave de acesso
+
+## Como executar
+
+É necessário ter o Node.js instalado.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:3000 no navegador.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Como gerar o build estático
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+O site estático é gerado na pasta `out/` (o `next.config.mjs` usa `output: "export"`). Para ver o resultado:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npx serve out
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Abra o endereço indicado no terminal.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Estrutura do projeto
 
-## Deploy on Vercel
+```
+app/
+  layout.js            layout geral (cabeçalho e rodapé)
+  page.js              página inicial com filtros
+  globals.css          estilos
+  roteiros/[id]/page.js  página dinâmica de cada roteiro
+  solicitar/page.js    página do formulário
+components/
+  Header.jsx, Filtros.jsx, RoteiroCard.jsx, DetalhesRoteiro.jsx,
+  QuestaoCard.jsx, TextoApoio.jsx, FormularioSolicitacao.jsx
+data/
+  disciplinas.json, roteiros.json
+lib/
+  wikipedia.js         consulta à API da Wikipédia
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Relatório de execução
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O relatório com o plano, o que foi realizado e as mudanças em relação ao protótipo está disponível em PDF: [ATV2 - Web.pdf](https://github.com/user-attachments/files/34108115/ATV2.-.Web.pdf)
